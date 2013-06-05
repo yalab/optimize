@@ -46,4 +46,5 @@ end
 gem 'faker'
 gem 'kaminari'
 gem 'therubyracer'
-gem 'metro-ui-rails'
+gem 'less-rails'
+gem 'metro-ui-rails', github: 'yalab/metro-ui-rails'
