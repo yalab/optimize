@@ -1,2 +1,12 @@
-<h1>Root#index</h1>
-<p>Find me in app/views/root/index.html.erb</p>
+<div class="grid">
+  <div class="row span11 offset1">
+      <%= link_to '重い処理', many_loops_path, class: 'span3 label' %>
+      <%= link_to '遅いレンダリング', heavy_rendering_path, class: 'span3 label success' %>
+      <%= link_to '遅い問い合わせ', slow_query_path, class: 'span3 label warning' %>
+  </div>
+  <div class="row span11 offset1">
+    <%= link_to '遅いjs', heavy_js_path, class: 'span3 label important' %>
+    <%= link_to 'N+1問題', n_plus_one_path, class: 'span3 label info' %>
+  </div>
+</div>
+

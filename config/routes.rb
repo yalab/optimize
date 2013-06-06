@@ -1,5 +1,9 @@
-Optimize::Application.routes.draw do  root 'root#index'
-
+Optimize::Application.routes.draw do
+  %i|n_plus_one heavy_js slow_query heavy_rendering many_loops|.each do |action|
+    get action, controller: :root
+  end
+  root 'root#index'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

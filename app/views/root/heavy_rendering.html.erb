@@ -1,0 +1,22 @@
+<% options = (0..100).map{|n| "<option>#{n}</option>".html_safe }.join.html_safe%>
+<h1>遅いレンダリング</h1>
+<table>
+  <tr>
+    <th>名前</th>
+    <th>年齢</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  <% 300.times do |n| %>
+    <tr id="<%= n %>">
+      <td><%= name = Faker::Name.name %></td>
+      <td><%= rand(50) %></td>
+      <td>
+        <select name="">
+          <%= options %>
+        </select>
+      </td>
+      <td><%= link_to name, {anchor: n} %></td>
+    </tr>
+  <% end %>
+</table>
