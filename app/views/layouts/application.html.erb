@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -40,24 +40,20 @@
       <div class="nav-bar">
         <div class="nav-bar-inner padding10">
           <span class="pull-menu"></span>
-
-          <a href="/">
+          <%= link_to root_path do %>
             <span class="element brand">
               <span class="metro-ui-logo place-left"></span>
               <span class="name">Optimize</span>
             </span>
-          </a>
+          <% end %>
 
           <ul class="menu">
-            <li><%= link_to "Home", "/" %></li>
+            <li><%= link_to "Home", root_path %></li>
 
             <li data-role="dropdown">
               <a href="#">Menu</a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Link1", "/path1" %></li>
-                <li><%= link_to "Link2", "/path2" %></li>
-                <li class="divider"></li>
-                <li><%= link_to "Link3", "/path3" %></li>
+                <li><%= link_to "User", users_path %></li>
               </ul>
             </li>
           </ul>
@@ -77,7 +73,7 @@
 
       <div class="nav-bar">
           <div class="nav-bar-inner" style="padding: 10px 10px 5px;">
-            <span class="element">&copy; Company 2012</span>
+            <span class="element">&copy; yalab 2013 </span>
           </div>
         </div>
 
@@ -87,6 +83,5 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
-
   </body>
 </html>
