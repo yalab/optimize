@@ -1,6 +1,4 @@
-Optimize::Application.routes.draw do
-  resources :users
-  root 'root#index'
+Optimize::Application.routes.draw do  root 'root#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
