@@ -19,5 +19,6 @@ class RootController < ApplicationController
   end
 
   def n_plus_one
+    @users = User.limit(30).to_a
   end
 end
