@@ -1,1 +1,11 @@
-<h1>遅い問い合わせ</h1>
+<div class="row">
+  <div class="offset2 span3">名前</div><div class="span1">年齢</div>
+</div>
+<% @users.each do |user| %>
+  <% color = 'border-color-' + cycle('blue', 'green', 'red', 'orange', 'darken') %>
+   
+  <div class="row">
+    <div class="offset2 span3 <%= color %>"><%= user.name %></div>
+    <div class="span1 <%= color %>"><%= user.age %></div>
+  </div>
+<% end %>

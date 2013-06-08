@@ -12,7 +12,7 @@ class RootController < ApplicationController
   end
 
   def slow_query
-    @users = User.where("name like ?", "%a%").order(:created_at).to_a
+    @users = User.where("name like ?", "%a%").order(:created_at).limit(30).to_a
   end
 
   def heavy_js
