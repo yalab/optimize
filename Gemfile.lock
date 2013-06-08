@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/yalab/metro-ui-rails.git
-  revision: 401eee4160f4c3f90b17e2695dbb2c0abe5a7987
+  remote: git://github.com/ViliusLuneckas/metro-ui-rails.git
+  revision: 362a76d9890e2ca62cb00cc30ca34d90e5b261f5
   specs:
     metro-ui-rails (0.15.8.14)
       less-rails (> 2.2.3)
